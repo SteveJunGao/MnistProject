@@ -30,8 +30,19 @@ def get_images(filename):
 	    index += struct.calcsize(big_endian + picture_bytes)
 	    im = list(im)
 	    for i in range(len(im)) :
-	        if im[i] > 1:
-	            im[i] = 1
+	    	if im[i] >= 1 and im[i] < 64:
+	    		im[i] = 1
+
+	    	if im[i] >= 64 and im[i] < 128:
+	    		im[i] = 2
+
+	    	if im[i] >= 128 and im[i] < 192:
+	    		im[i] = 3
+
+	    	if im[i] >= 192 and im[i] < 256:
+	    		im[i] = 4
+
+	    	else: im[i] = 0
 	            
 	    images.append(im)
 	a = np.array(images)

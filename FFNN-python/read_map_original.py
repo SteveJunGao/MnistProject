@@ -29,10 +29,6 @@ def get_images(filename):
 	    im = struct.unpack_from(big_endian + picture_bytes, buf, index)
 	    index += struct.calcsize(big_endian + picture_bytes)
 	    im = list(im)
-	    for i in range(len(im)) :
-	        if im[i] > 1:
-	            im[i] = 1
-	            
 	    images.append(im)
 	a = np.array(images)
 	return a

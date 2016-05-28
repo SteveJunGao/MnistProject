@@ -1,0 +1,190 @@
+---------
+#ite  0
+train correctness 0.687416666667
+CV correctness 0.686583333333
+test correctness 0.6925
+---------
+#ite  1
+train correctness 0.722041666667
+CV correctness 0.722583333333
+test correctness 0.7285
+---------
+#ite  2
+train correctness 0.696375
+CV correctness 0.691416666667
+test correctness 0.7033
+---------
+#ite  3
+train correctness 0.685625
+CV correctness 0.688583333333
+test correctness 0.6984
+---------
+#ite  4
+train correctness 0.708
+CV correctness 0.707666666667
+test correctness 0.7101
+---------
+#ite  5
+train correctness 0.738791666667
+CV correctness 0.733666666667
+test correctness 0.7405
+---------
+#ite  6
+train correctness 0.700375
+CV correctness 0.704
+test correctness 0.7013
+---------
+#ite  7
+train correctness 0.7715625
+CV correctness 0.767666666667
+test correctness 0.7712
+---------
+#ite  8
+train correctness 0.701604166667
+CV correctness 0.70225
+test correctness 0.701
+---------
+#ite  9
+train correctness 0.746354166667
+CV correctness 0.750916666667
+test correctness 0.7487
+---------
+#ite  10
+train correctness 0.691375
+CV correctness 0.6885
+test correctness 0.7034
+---------
+#ite  11
+train correctness 0.763916666667
+CV correctness 0.759416666667
+test correctness 0.7706
+---------
+#ite  12
+train correctness 0.751125
+CV correctness 0.749916666667
+test correctness 0.7568
+---------
+#ite  13
+train correctness 0.77475
+CV correctness 0.768583333333
+test correctness 0.7723
+---------
+#ite  14
+train correctness 0.746354166667
+CV correctness 0.740416666667
+test correctness 0.7495
+---------
+#ite  15
+train correctness 0.77575
+CV correctness 0.77
+test correctness 0.785
+---------
+#ite  16
+train correctness 0.787
+CV correctness 0.780083333333
+test correctness 0.7899
+---------
+#ite  17
+train correctness 0.763041666667
+CV correctness 0.756666666667
+test correctness 0.7679
+---------
+#ite  18
+train correctness 0.7801875
+CV correctness 0.772583333333
+test correctness 0.783
+---------
+#ite  19
+train correctness 0.780291666667
+CV correctness 0.76925
+test correctness 0.784
+---------
+#ite  20
+train correctness 0.758145833333
+CV correctness 0.752666666667
+test correctness 0.7665
+---------
+#ite  21
+train correctness 0.762854166667
+CV correctness 0.758083333333
+test correctness 0.767
+---------
+#ite  22
+train correctness 0.7798125
+CV correctness 0.77325
+test correctness 0.7874
+---------
+#ite  23
+train correctness 0.765270833333
+CV correctness 0.758333333333
+test correctness 0.7727
+---------
+#ite  24
+train correctness 0.797791666667
+CV correctness 0.785416666667
+test correctness 0.8001
+---------
+#ite  25
+train correctness 0.7505
+CV correctness 0.745583333333
+test correctness 0.7558
+---------
+#ite  26
+train correctness 0.7525
+CV correctness 0.743916666667
+test correctness 0.7549
+---------
+#ite  27
+train correctness 0.769416666667
+CV correctness 0.766416666667
+test correctness 0.7711
+---------
+#ite  28
+train correctness 0.787541666667
+CV correctness 0.784
+test correctness 0.7954
+---------
+#ite  29
+train correctness 0.781416666667
+CV correctness 0.77525
+test correctness 0.7842
+---------
+#ite  30
+train correctness 0.762291666667
+CV correctness 0.7575
+test correctness 0.769
+---------
+#ite  31
+train correctness 0.792458333333
+CV correctness 0.790083333333
+test correctness 0.7861
+---------
+#ite  32
+train correctness 0.769125
+CV correctness 0.76925
+test correctness 0.7718
+---------
+#ite  33
+train correctness 0.774020833333
+CV correctness 0.774
+test correctness 0.7743
+---------
+#ite  34
+train correctness 0.7853125
+CV correctness 0.77825
+test correctness 0.7973
+---------
+#ite  35
+train correctness 0.811729166667
+CV correctness 0.8095
+test correctness 0.8174
+---------
+#ite  36
+train correctness 0.776958333333
+CV correctness 0.775083333333
+test correctness 0.7833
+---------
+#ite  37
+train correctness 0.793208333333
+CV correctness 0.792166666667
+test correctness 0.7935
