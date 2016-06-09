@@ -1,0 +1,9 @@
+test size = 1000 test accuracy: 0.793
+test size = 2000 test accuracy: 0.7805
+test size = 3000 test accuracy: 0.785666666667
+test size = 4000 test accuracy: 0.783
+test size = 5000 test accuracy: 0.7808
+test size = 6000 test accuracy: 0.796833333333
+test size = 7000 test accuracy: 0.806571428571
+test size = 8000 test accuracy: 0.812125
+test size = 9000 test accuracy: 0.823777777778
