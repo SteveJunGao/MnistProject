@@ -18,7 +18,7 @@ train_label = get_train_labels()
 test_image = get_test_images()
 test_label = get_test_labels()
 
-log_file = 'log_data_aug_random2'
+log_file = 'log_data_aug_firstly'
 log = open(log_file, 'w')
 
 num_hid = 100 #number units of the hidden layer
@@ -28,7 +28,7 @@ num_images = 60000
 num_test = 10000
 decay_epoch = 10; #decay learning rate every 5 epoch
 decay_rate = 0.1
-alpha = 0.025 # learning speed 
+alpha = 0.05 # learning speed 
 
 def sigmoid(inx):
     return 1.0 / (1.0 + np.exp(- inx))
@@ -56,6 +56,9 @@ def predict(X, y):
         val_out = np.dot(W_out, sig_val_hid)
         val_out += b_out
         val_out = sigmoid(val_out)
+        val_out = softmax(val_out)
+        #print x
+        #print val_out.reshape(10)
         i = 0
         max_ = np.max(val_out)
         #find the index of i
@@ -128,14 +131,37 @@ y_train = train_label[:num_train]
 y_CV    = train_label[num_train:num_CV]
 y_test  = test_label
 
-#X_train = reshape_image(X_train)
-#X_CV = reshape_image(X_CV)
-#X_test = reshape_image(X_test)
+X_train = reshape_image(X_train)
+X_CV = reshape_image(X_CV)
+X_test = reshape_image(X_test)
 
 ori_train_x = X_train
 ori_train_y = y_train
+# update at the first time
+print '==> start augmentation'
+y_train, X_train, num_train = augment_images_ori(ori_train_x, ori_train_y)
+print '==> end augmentation'
+print num_train
+print len(X_train)
+'''
+check OK!
+print '==>start checking'
+def check(src, src_label, dst, dst_label):
+    n = len(dst)
+    for i in range(n):
+        #print str(i) + ' ',
+        if dst_label[i] != src_label[i * 2]:
+            print "wrong label"
+        for j in range(28*28):
+            if dst[i][j][0] != src[i * 2][j][0]:
+                print 'diff pixels at', 
+                print i
+                break
 
+check(X_train, y_train, ori_train_x, ori_train_y)
+print '==> end checking'
 
+'''
 
 #Backpropagation
 for ite in range(1, 100):#training times
@@ -216,11 +242,11 @@ for ite in range(1, 100):#training times
     log.flush()
     
      # update the training set
-    
+    '''
     if ite  == 2:
         predict_labels = predict_all(ori_train_x)
         print '==> start augmentation'
         y_train, X_train, num_train = augment_images(ori_train_x, ori_train_y, predict_labels)
         print '==> end augmentation'
         print num_train
-    
+    '''

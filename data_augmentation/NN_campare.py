@@ -18,7 +18,7 @@ train_label = get_train_labels()
 test_image = get_test_images()
 test_label = get_test_labels()
 
-log_file = 'log_data_aug_random2'
+log_file = 'log_data_aug_each_ori'
 log = open(log_file, 'w')
 
 num_hid = 100 #number units of the hidden layer
@@ -136,7 +136,6 @@ ori_train_x = X_train
 ori_train_y = y_train
 
 
-
 #Backpropagation
 for ite in range(1, 100):#training times
 
@@ -217,10 +216,10 @@ for ite in range(1, 100):#training times
     
      # update the training set
     
-    if ite  == 2:
-        predict_labels = predict_all(ori_train_x)
+    if ite == 2:
+        #predict_labels = predict_all(ori_train_x)
         print '==> start augmentation'
-        y_train, X_train, num_train = augment_images(ori_train_x, ori_train_y, predict_labels)
+        y_train, X_train, num_train = augment_images_random(ori_train_x, ori_train_y, 1687)
         print '==> end augmentation'
         print num_train
     
