@@ -1,2 +1,2 @@
 # MnistProject
-算法分析与设计 的课程大作业
+ Project of class: Algorithm Design and Analysis. I compare different approaches to do MNIST classification, such as SVM, KNN, K-Means, CNN, FFNN
